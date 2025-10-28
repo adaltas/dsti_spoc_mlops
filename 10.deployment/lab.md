@@ -8,7 +8,7 @@
 
 **Dependencies:**
 
-- script: `model.py`. You start with this one and follow the tutorial. It is the same elastin cet model that we were using before.
+- script: `model.py`. You start with this one and follow the tutorial. It is the same elastincet model that has been utilized previously.
 
 **Instructions:**
 
@@ -137,7 +137,7 @@ r.text.strip()
 print(r.text.strip())
 ```
 
-When you run it, it should return a list with predictions. If you get an error saying thet the module `requests` was not found, `pip install requests` and run it again.
+When you run it, it should return a list with predictions. If you get an error saying the the module `requests` was not found, `pip install requests` and run it again.
 
 **NOTE:** If you didn't run the `main.py` before and left it running, this will not work!
 
@@ -147,7 +147,7 @@ When you run it, it should return a list with predictions. If you get an error s
 
 ### Create Docker image
 
-19. Check out the examples of the Dockerfiles from yesterday and create one to containerize your model. **Hint**: Instead of CMD, you will use `ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:9696", "main:app"]` to start the app in the container.
+19. Check out the examples of the Dockerfiles from the Docker modules and create one to containerize your model. **Hint**: Instead of CMD, you will use `ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:9696", "main:app"]` to start the app in the container.
 
 20. Build the image and name it `wine-app`.
 
@@ -155,9 +155,11 @@ When you run it, it should return a list with predictions. If you get an error s
 
 22. Test it again with the `test_app_locally.py` and stop it (`Ctrl+C`).
 
-23. Tag the image properly and push it to the Docker Hub (check yesterday's lab).
+23. Tag the image properly and push it to the Docker Hub (review the docker labs).
 
 ### Deploying the container to Azure Web Services
+
+**WARNING!!!:** Do not complete the Azure section of this course if you have not yet had and/or will be having any courses dedicated to Azure. These credits will be needed for and much better utilized for those courses. (Also, do not try to complete on AWS for similar reasons. ) At the time of this writing there are not convenient/available free resources for testing deployments. 
 
 ##### Create your account
 
@@ -205,5 +207,3 @@ Then connect to your [azure portal](https://portal.azure.com/)
 
 - [Deploying Machine Learning Models with Flask and Docker](https://www.youtube.com/watch?v=KTd2a1QKlwo&list=WL&index=1)
 - [Tip 12: Deploying a container image to Azure App Service from Docker Hub](https://www.youtube.com/watch?v=_LNOg8kU4CE)
-
-
