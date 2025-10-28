@@ -134,3 +134,6 @@ dist
 
 # mlflow
 mlruns/
+
+# python
+.ipynb_checkpoints/
