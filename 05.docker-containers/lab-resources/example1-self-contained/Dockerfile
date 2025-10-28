@@ -1,10 +1,10 @@
 # Use latest Python runtime as a parent image
-FROM python:3.6.5-slim
+FROM python:3.6-slim
 
 # Meta-data
 LABEL maintainer="Aly Sivji <alysivji@gmail.com>" \
-      description="Data Science Workflow #1: Self-Contained Container\
-      Libraries, data, and code in one image"
+    description="Data Science Workflow #1: Self-Contained Container\
+    Libraries, data, and code in one image"
 
 # Set the working directory to /app
 WORKDIR /app
